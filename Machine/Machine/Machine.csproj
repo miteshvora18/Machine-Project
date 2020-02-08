@@ -1,0 +1,243 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD85126C-9834-4226-A69B-E73105284ABC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Machine</RootNamespace>
+    <AssemblyName>Machine</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="All_Orders.aspx.cs">
+      <DependentUpon>All_Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="All_Orders.aspx.designer.cs">
+      <DependentUpon>All_Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpMarketing.Master.cs">
+      <DependentUpon>EmpMarketing.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpMarketing.Master.designer.cs">
+      <DependentUpon>EmpMarketing.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditAllOrders.aspx.cs">
+      <DependentUpon>EditAllOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditAllOrders.aspx.designer.cs">
+      <DependentUpon>EditAllOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacture.Master.cs">
+      <DependentUpon>Manufacture.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manufacture.Master.designer.cs">
+      <DependentUpon>Manufacture.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Markiting.Master.cs">
+      <DependentUpon>Markiting.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Markiting.Master.designer.cs">
+      <DependentUpon>Markiting.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Manu.aspx.cs">
+      <DependentUpon>Order_Manu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order_Manu.aspx.designer.cs">
+      <DependentUpon>Order_Manu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Packing.aspx.cs">
+      <DependentUpon>Order_Packing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order_Packing.aspx.designer.cs">
+      <DependentUpon>Order_Packing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order_status.aspx.cs">
+      <DependentUpon>Order_status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order_status.aspx.designer.cs">
+      <DependentUpon>Order_status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order_testing.aspx.cs">
+      <DependentUpon>Order_testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order_testing.aspx.designer.cs">
+      <DependentUpon>Order_testing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Packing.Master.cs">
+      <DependentUpon>Packing.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Packing.Master.designer.cs">
+      <DependentUpon>Packing.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testing.Master.cs">
+      <DependentUpon>Testing.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testing.Master.designer.cs">
+      <DependentUpon>Testing.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\Administrator.PNG" />
+    <Content Include="Image\Manufacture.PNG" />
+    <Content Include="Image\Markiting.png" />
+    <Content Include="Image\packing.PNG" />
+    <Content Include="Image\tESTING.PNG" />
+    <Content Include="Markiting.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.Master" />
+    <Content Include="Order.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Manufacture.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Testing.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="All_Orders.aspx" />
+    <Content Include="Default.css" />
+    <Content Include="EditAllOrders.aspx" />
+    <Content Include="Image\btn.jpg" />
+    <Content Include="Image\laser.jpg" />
+    <Content Include="Image\login_bg.jpg" />
+    <Content Include="Image\Metal.jpg" />
+    <Content Include="Image\paper_converter.jpg" />
+    <Content Include="Image\Printing.jpg" />
+    <Content Include="Image\Pumps.png" />
+    <Content Include="Image\Refrigeration.jpg" />
+    <Content Include="jquery-1.8.3.min.js" />
+    <Content Include="Order_Manu.aspx" />
+    <Content Include="Order_Packing.aspx" />
+    <Content Include="Order_status.aspx" />
+    <Content Include="Order_testing.aspx" />
+    <Content Include="Packing.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EmpMarketing.Master" />
+    <Content Include="Image\Grant_mechanical_calculating_machine_1877.jpg" />
+    <Content Include="Image\images.jpg" />
+    <Content Include="Image\KY-Nailing-Machine.jpg" />
+    <Content Include="Image\Machine.PNG" />
+    <Content Include="Register.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4350</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

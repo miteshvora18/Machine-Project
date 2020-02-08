@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Markiting.master.cs" Inherits="Machine.Markiting" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Default.css" rel="stylesheet" type="text/css" />
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="loginPanel">
+        <asp:Button ID="btnLogOut" runat="server" Text="Log Out" CssClass="logOut" 
+            onclick="btnLogOut_Click" CausesValidation="false" />
+        <asp:Label ID="lblName" runat="server" Text="" CssClass="lblLoginName"></asp:Label>
+    </div>
+    <div style="">
+        <asp:Image ID="Image1" runat="server" Height="200px" 
+            ImageUrl="~/Image/Machine.png" Width="1350px" />
+        <br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
